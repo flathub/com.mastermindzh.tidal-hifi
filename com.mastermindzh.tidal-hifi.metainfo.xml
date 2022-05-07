@@ -36,11 +36,9 @@
   <releases>
     <release version="3.1.0" date="2022-05-07">
       <description>
-        <p>
-          Added a separate advanced options settings panel with flags<br>
-          Added gpu-rasterization flag<br>
-          config setting disableHardwareMediaKeys moved to flags.disableHardwareMediaKeys, it will be migrated automatically
-       </p>
+          <p>Added a separate advanced options settings panel with flags</p>
+          <p>Added gpu-rasterization flag</p>
+          <p>config setting disableHardwareMediaKeys moved to flags.disableHardwareMediaKeys, it will be migrated automatically</p>
       </description>
     </release>
     <release version="3.0.0" date="2022-04-23">
