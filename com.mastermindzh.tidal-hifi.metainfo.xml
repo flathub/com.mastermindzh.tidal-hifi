@@ -34,6 +34,13 @@
   </screenshots>
   <content_rating type="oars-1.1"/>
   <releases>
+    <release version="3.1.1" date="2022-06-18">
+      <description>
+          <p>Media update timeout set to 500 instead of 200</p>
+          <p>Updated property name for duration because of a tidal update</p>
+          <p>flag for "disable hardware media keys" now working again</p>
+      </description>
+    </release>
     <release version="3.1.0" date="2022-05-07">
       <description>
           <p>Added a separate advanced options settings panel with flags</p>
