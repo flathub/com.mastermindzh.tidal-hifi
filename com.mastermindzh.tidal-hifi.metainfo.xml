@@ -34,6 +34,11 @@
   </screenshots>
   <content_rating type="oars-1.1"/>
   <releases>
+    <release version="4.2.0" date="2022-09-25">
+      <description>
+          <p>New settings window</p>
+      </description>
+    </release>
     <release version="4.1.1" date="2022-08-23">
       <description>
           <p>Fix inconsistent auto-muting</p>
