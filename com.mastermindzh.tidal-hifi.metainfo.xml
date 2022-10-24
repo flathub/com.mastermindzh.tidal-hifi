@@ -14,7 +14,7 @@
   </categories>
   <description>
     <p>
-      Listen to over 80 million songs in HiFi qualityand access 350K+ music videos through TIDAL with tidal-hifi
+      Listen to over 80 million songs in HiFi quality and access 350K+ music videos through TIDAL with tidal-hifi
     </p>
   </description>
   <launchable type="desktop-id">com.mastermindzh.tidal-hifi.desktop</launchable>
@@ -34,6 +34,11 @@
   </screenshots>
   <content_rating type="oars-1.1"/>
   <releases>
+    <release version="4.3.1" date="2022-10-24">
+      <description>
+          <p>Fix app always requesting to be set as default app handler on start.</p>
+      </description>
+    </release>
     <release version="4.3.0" date="2022-10-05">
       <description>
           <p>Added a setting to disable background throttling</p>
@@ -103,3 +108,4 @@
     </release>
   </releases>
 </component>
+
