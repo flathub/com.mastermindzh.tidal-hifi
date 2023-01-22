@@ -19,8 +19,8 @@ modules:
   - name: tidal-hifi
     buildsystem: simple
     build-commands:
-      - chmod +x tidal-hifi-4.3.1.AppImage
-      - ./tidal-hifi-4.3.1.AppImage --appimage-extract
+      - chmod +x tidal-hifi-4.4.0.AppImage
+      - ./tidal-hifi-4.4.0.AppImage --appimage-extract
 
       - install -dm755 "${FLATPAK_DEST}/bin" "${FLATPAK_DEST}/lib/tidal-hifi"
       - cp -r squashfs-root/* "${FLATPAK_DEST}/lib/tidal-hifi"
@@ -33,12 +33,11 @@ modules:
       - install -Dm644 -t ${FLATPAK_DEST}/share/metainfo com.mastermindzh.tidal-hifi.metainfo.xml
     sources:
       - type: file
-        url: https://github.com/Mastermindzh/tidal-hifi/releases/download/4.3.1/tidal-hifi-4.3.1.AppImage
-        sha256: 0a77876437ea5fd925a7f34df47ee643e4d950bbd0406d28083adaf57d05ff30
+        url: https://github.com/Mastermindzh/tidal-hifi/releases/download/4.4.0/tidal-hifi-4.4.0.AppImage
+        sha256: c6a544cecf896ba591a60c5ce1698bbe829e1e5129327dbdd5f46c21b6424505
       - type: file
         path: com.mastermindzh.tidal-hifi.metainfo.xml
       - type: file
         path: com.mastermindzh.tidal-hifi.png
       - type: file
         path: run.sh
-
