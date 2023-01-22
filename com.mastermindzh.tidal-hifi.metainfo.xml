@@ -34,6 +34,15 @@
   </screenshots>
   <content_rating type="oars-1.1"/>
   <releases>
+    <release version="4.4.0" date="2023-01-22">
+      <description>
+          <p>Updated shortcut hint on the menubar to reflect the new ctrl+= shortcut.</p>
+          <p>Add support to autoHide the menubar and showing it with the alt key.</p>
+          <p>Move the quit command from the system sub-menu to the main menu.</p>
+          <p>Added single click focus/show on the tray icon.</p>
+          <p>Added a list of artists to automatically skip.</p>
+      </description>
+    </release>
     <release version="4.3.1" date="2022-10-24">
       <description>
           <p>Fix app always requesting to be set as default app handler on start.</p>
@@ -108,4 +117,3 @@
     </release>
   </releases>
 </component>
-
