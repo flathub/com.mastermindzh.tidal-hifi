@@ -41,19 +41,18 @@
   <releases>
     <release version="5.1.0" date="2023-04-27">
       <description>
-        <h1>Custom CSS, mediaSession API, bugfixes...</h1>
-        <h2>New features</h2>
-        <ul>
-          <li>Added proper updates through the MediaSession API</li>
-          <li>You can now add custom CSS in the "advanced" settings tab</li>
-          <li>You can now configure the updateFrequency in the settings window (default = 500)</li>
-        </ul>
-        <h2>Bugfixes</h2>
-        <ul>
-          <li>Any songs including an artist listed in the skipped artists setting will now be
-            skipped even if the song is a collaboration.</li>
-          <li>Linux desktop icons have been fixed. See #222 for details.</li>
-        </ul>
+        <p>Custom CSS, mediaSession API, bugfixes...</p>
+        <p>New features</p>
+        <p>
+          Added proper updates through the MediaSession API
+          You can now add custom CSS in the "advanced" settings tab
+          You can now configure the updateFrequency in the settings window (default = 500)
+        </p>
+        <p>Bugfixes</p>
+        <p>
+          Any songs including an artist listed in the skipped artists setting will now be
+          skipped even if the song is a collaboration.
+          Linux desktop icons have been fixed. See #222 for details.</p>
       </description>
     </release>
     <release version="5.0.0" date="2023-04-22">
