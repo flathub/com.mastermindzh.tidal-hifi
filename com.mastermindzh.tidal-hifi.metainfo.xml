@@ -2,10 +2,12 @@
 <component type="desktop-application">
   <id>com.mastermindzh.tidal-hifi</id>
   <name>tidal-hifi</name>
-  <summary>The web version of listen.tidal.com running in electron with hifi support thanks to widevine.</summary>
+  <summary>The web version of listen.tidal.com running in electron with hifi support thanks to
+    widevine.</summary>
   <developer_name>Rick van Lieshout</developer_name>
   <url type="homepage">https://github.com/Mastermindzh/tidal-hifi</url>
-  <url type="bugtracker">https://github.com/Mastermindzh/tidal-hifi/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc</url>
+  <url type="bugtracker">
+    https://github.com/Mastermindzh/tidal-hifi/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc</url>
   <metadata_license>MIT</metadata_license>
   <project_license>MIT</project_license>
   <categories>
@@ -14,7 +16,8 @@
   </categories>
   <description>
     <p>
-      Listen to over 80 million songs in HiFi quality and access 350K+ music videos through TIDAL with tidal-hifi
+      Listen to over 80 million songs in HiFi quality and access 350K+ music videos through TIDAL
+      with tidal-hifi
     </p>
   </description>
   <launchable type="desktop-id">com.mastermindzh.tidal-hifi.desktop</launchable>
@@ -23,72 +26,102 @@
       <image>https://raw.githubusercontent.com/Mastermindzh/tidal-hifi/master/docs/preview.png</image>
     </screenshot>
     <screenshot>
-      <image>https://raw.githubusercontent.com/Mastermindzh/tidal-hifi/master/docs/settings-preview.png</image>
+      <image>
+        https://raw.githubusercontent.com/Mastermindzh/tidal-hifi/master/docs/settings-preview.png</image>
     </screenshot>
     <screenshot>
       <image>https://raw.githubusercontent.com/Mastermindzh/tidal-hifi/master/docs/integrations.png</image>
     </screenshot>
     <screenshot>
-      <image>https://user-images.githubusercontent.com/51519051/164771303-80b0a53a-a9f6-475b-bfff-aeeb1093c724.png</image>
+      <image>
+        https://user-images.githubusercontent.com/51519051/164771303-80b0a53a-a9f6-475b-bfff-aeeb1093c724.png</image>
     </screenshot>
   </screenshots>
-  <content_rating type="oars-1.1"/>
+  <content_rating type="oars-1.1" />
   <releases>
+    <release version="5.1.0" date="2023-04-27">
+      <description>
+        <h1>Custom CSS, mediaSession API, bugfixes...</h1>
+        <h2>New features</h2>
+        <ul>
+          <li>Added proper updates through the MediaSession API</li>
+          <li>You can now add custom CSS in the "advanced" settings tab</li>
+          <li>You can now configure the updateFrequency in the settings window (default = 500)</li>
+        </ul>
+        <h2>Bugfixes</h2>
+        <ul>
+          <li>Any songs including an artist listed in the skipped artists setting will now be
+            skipped even if the song is a collaboration.</li>
+          <li>Linux desktop icons have been fixed. See #222 for details.</li>
+        </ul>
+      </description>
+    </release>
+    <release version="5.0.0" date="2023-04-22">
+      <description>
+        <p>Adblocking support thanks to @thanasistrisp.</p>
+        <p> Replaced "muting artists" with a full implementation of an Adblock mechanism<br /> >
+          Disabled audio &amp; visual ads, unlocked lyrics, suggested track, track info, unlimited
+          skips thanks to uBlockOrigin custom filters (source) </p>
+        <p>Updated to Electron 24.1.2</p>
+      </description>
+    </release>
     <release version="4.4.0" date="2023-01-22">
       <description>
-          <p>Updated shortcut hint on the menubar to reflect the new ctrl+= shortcut.</p>
-          <p>Add support to autoHide the menubar and showing it with the alt key.</p>
-          <p>Move the quit command from the system sub-menu to the main menu.</p>
-          <p>Added single click focus/show on the tray icon.</p>
-          <p>Added a list of artists to automatically skip.</p>
+        <p>Updated shortcut hint on the menubar to reflect the new ctrl+= shortcut.</p>
+        <p>Add support to autoHide the menubar and showing it with the alt key.</p>
+        <p>Move the quit command from the system sub-menu to the main menu.</p>
+        <p>Added single click focus/show on the tray icon.</p>
+        <p>Added a list of artists to automatically skip.</p>
       </description>
     </release>
     <release version="4.3.1" date="2022-10-24">
       <description>
-          <p>Fix app always requesting to be set as default app handler on start.</p>
+        <p>Fix app always requesting to be set as default app handler on start.</p>
       </description>
     </release>
     <release version="4.3.0" date="2022-10-05">
       <description>
-          <p>Added a setting to disable background throttling</p>
+        <p>Added a setting to disable background throttling</p>
       </description>
     </release>
     <release version="4.2.0" date="2022-09-25">
       <description>
-          <p>New settings window</p>
+        <p>New settings window</p>
       </description>
     </release>
     <release version="4.1.1" date="2022-08-23">
       <description>
-          <p>Fix inconsistent auto-muting</p>
+        <p>Fix inconsistent auto-muting</p>
       </description>
     </release>
     <release version="4.1.0" date="2022-08-07">
       <description>
-          <p>Added tidal:// protocol support</p>
-          <p>Switched icon strategies to fix bugs with icons</p>
-          <p>Fixed tray icon bugs (Menu now shows in KDE as well, Toggle window is supported from tray icon)</p>
-          <p>Fixed about tab not showing</p>
-          <p>Fixed playback, mpris and API issues</p>
+        <p>Added tidal:// protocol support</p>
+        <p>Switched icon strategies to fix bugs with icons</p>
+        <p>Fixed tray icon bugs (Menu now shows in KDE as well, Toggle window is supported from tray
+          icon)</p>
+        <p>Fixed about tab not showing</p>
+        <p>Fixed playback, mpris and API issues</p>
       </description>
     </release>
     <release version="4.0.0" date="2022-06-23">
       <description>
-          <p>Electron update to 19.0.5</p>
+        <p>Electron update to 19.0.5</p>
       </description>
     </release>
     <release version="3.1.1" date="2022-06-18">
       <description>
-          <p>Media update timeout set to 500 instead of 200</p>
-          <p>Updated property name for duration because of a tidal update</p>
-          <p>flag for "disable hardware media keys" now working again</p>
+        <p>Media update timeout set to 500 instead of 200</p>
+        <p>Updated property name for duration because of a tidal update</p>
+        <p>flag for "disable hardware media keys" now working again</p>
       </description>
     </release>
     <release version="3.1.0" date="2022-05-07">
       <description>
-          <p>Added a separate advanced options settings panel with flags</p>
-          <p>Added gpu-rasterization flag</p>
-          <p>config setting disableHardwareMediaKeys moved to flags.disableHardwareMediaKeys, it will be migrated automatically</p>
+        <p>Added a separate advanced options settings panel with flags</p>
+        <p>Added gpu-rasterization flag</p>
+        <p>config setting disableHardwareMediaKeys moved to flags.disableHardwareMediaKeys, it will
+          be migrated automatically</p>
       </description>
     </release>
     <release version="3.0.0" date="2022-04-23">
@@ -97,12 +130,12 @@
           Updated to Electron 15
           Added setting to disable multiple tidal-hifi windows (defaults to true)
           Added setting to disable HardwareMediaKeyHandling (defaults to false)
-       </p>
+        </p>
       </description>
     </release>
     <release version="2.8.2" date="2022-04-22">
       <description>
-	      <p>Hotfix -> no more audio playback</p>
+        <p>Hotfix -> no more audio playback</p>
       </description>
     </release>
     <release version="2.8.1" date="2022-04-21">
