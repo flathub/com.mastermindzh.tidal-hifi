@@ -39,6 +39,21 @@
   </screenshots>
   <content_rating type="oars-1.1" />
   <releases>
+    <release version="5.2.0" date="2023-06-19">
+      <description>
+        <p>Full blown theming and album art fix</p>
+        <p>New features</p>
+        <p>
+          - In the settings window you'll now find a "theming" tab where you can select a theme
+          - You can upload custom theme files there too
+          - Custom CSS overrides any settings in theme files ()
+        </p>
+        <p>Bugfixes</p>
+        <p>
+          - Album art now shows on album and playlist plays
+        </p>
+      </description>
+    </release>
     <release version="5.1.0" date="2023-04-27">
       <description>
         <p>Custom CSS, mediaSession API, bugfixes...</p>
