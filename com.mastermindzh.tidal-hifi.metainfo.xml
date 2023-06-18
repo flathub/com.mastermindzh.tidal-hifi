@@ -23,14 +23,16 @@
   <launchable type="desktop-id">com.mastermindzh.tidal-hifi.desktop</launchable>
   <screenshots>
     <screenshot type="default">
-      <image>https://raw.githubusercontent.com/Mastermindzh/tidal-hifi/master/docs/preview.png</image>
+      <image>
+        https://raw.githubusercontent.com/Mastermindzh/tidal-hifi/master/docs/images/preview.png</image>
     </screenshot>
     <screenshot>
       <image>
-        https://raw.githubusercontent.com/Mastermindzh/tidal-hifi/master/docs/settings-preview.png</image>
+        https://raw.githubusercontent.com/Mastermindzh/tidal-hifi/master/docs/images/settings-preview.png</image>
     </screenshot>
     <screenshot>
-      <image>https://raw.githubusercontent.com/Mastermindzh/tidal-hifi/master/docs/integrations.png</image>
+      <image>
+        https://raw.githubusercontent.com/Mastermindzh/tidal-hifi/master/docs/images/integrations.png</image>
     </screenshot>
     <screenshot>
       <image>
