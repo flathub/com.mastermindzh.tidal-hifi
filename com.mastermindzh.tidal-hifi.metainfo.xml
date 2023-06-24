@@ -41,6 +41,11 @@
   </screenshots>
   <content_rating type="oars-1.1" />
   <releases>
+    <release version="5.3.0" date="2023-06-24">
+      <description>
+        <p>Updated Tokyo Night theme</p>
+      </description>
+    </release>
     <release version="5.2.0" date="2023-06-19">
       <description>
         <p>Full blown theming and album art fix</p>
