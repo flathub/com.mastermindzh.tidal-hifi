@@ -2,8 +2,7 @@
 <component type="desktop-application">
   <id>com.mastermindzh.tidal-hifi</id>
   <name>tidal-hifi</name>
-  <summary>The web version of listen.tidal.com running in electron with hifi support thanks to
-    widevine</summary>
+  <summary>The web version of listen.tidal.com with hifi support</summary>
   <developer_name>Rick van Lieshout</developer_name>
   <url type="homepage">https://github.com/Mastermindzh/tidal-hifi</url>
   <url type="bugtracker">
