@@ -3,7 +3,7 @@
   <id>com.mastermindzh.tidal-hifi</id>
   <name>tidal-hifi</name>
   <summary>The web version of listen.tidal.com running in electron with hifi support thanks to
-    widevine.</summary>
+    widevine</summary>
   <developer_name>Rick van Lieshout</developer_name>
   <url type="homepage">https://github.com/Mastermindzh/tidal-hifi</url>
   <url type="bugtracker">
@@ -41,6 +41,12 @@
   </screenshots>
   <content_rating type="oars-1.1" />
   <releases>
+    <release version="5.4.0" date="2023-07-24">
+      <description>
+        <p>Added Songwhip integration</p>
+        <p>Fixed bug with several hotkeys not working</p>
+      </description>
+    </release>
     <release version="5.3.0" date="2023-06-24">
       <description>
         <p>Updated Tokyo Night theme</p>
