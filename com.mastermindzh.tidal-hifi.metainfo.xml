@@ -40,7 +40,7 @@
   </screenshots>
   <content_rating type="oars-1.1" />
   <releases>
-    <release version="5.7.0" date="2023-08-12">
+    <release version="5.7.0" date="2023-08-28">
       <description>
         <p>Added settings to customize the Discord rich presence information </p>
         <p>Restyled settings menu to include version number and useful links on the about page</p>
