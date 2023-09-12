@@ -2,7 +2,7 @@
 <component type="desktop-application">
   <id>com.mastermindzh.tidal-hifi</id>
   <name>TIDAL Hi-Fi</name>
-  <summary>The web version of listen.tidal.com with Hi-Fi (High & Max) support</summary>
+  <summary>The web version of listen.tidal.com with Hi-Fi (High and Max) support</summary>
   <developer_name>Rick van Lieshout</developer_name>
   <url type="homepage">https://github.com/Mastermindzh/tidal-hifi</url>
   <url type="bugtracker">
