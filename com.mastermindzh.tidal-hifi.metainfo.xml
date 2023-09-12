@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <component type="desktop-application">
   <id>com.mastermindzh.tidal-hifi</id>
-  <name>tidal-hifi</name>
-  <summary>The web version of listen.tidal.com with hifi support</summary>
+  <name>TIDAL Hi-Fi</name>
+  <summary>The web version of listen.tidal.com with Hi-Fi (High & Max) support</summary>
   <developer_name>Rick van Lieshout</developer_name>
   <url type="homepage">https://github.com/Mastermindzh/tidal-hifi</url>
   <url type="bugtracker">
@@ -12,6 +12,8 @@
   <categories>
     <category>AudioVideo</category>
     <category>Audio</category>
+    <category>Player</category>
+    <category>Music</category>
   </categories>
   <description>
     <p>
