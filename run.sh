@@ -28,4 +28,5 @@ then
 fi
 
 cd /app/lib/tidal-hifi
-exec TMPDIR=$XDG_CACHE_HOME zypak-wrapper ./tidal-hifi "${EXTRA_FLAGS[@]}" "$@"
+export TMPDIR="$XDG_CACHE_HOME"
+exec zypak-wrapper ./tidal-hifi "${EXTRA_FLAGS[@]}" "$@"
