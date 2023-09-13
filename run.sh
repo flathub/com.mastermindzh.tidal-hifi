@@ -4,7 +4,7 @@ for i in {0..9}; do
     test -S $XDG_RUNTIME_DIR/discord-ipc-$i || ln -sf {app/com.discordapp.Discord,$XDG_RUNTIME_DIR}/discord-ipc-$i;
 done
 
-declare -a EXTRA_FLAGS=(--no-sandbox)
+declare -a EXTRA_FLAGS=()
 
 # Display Socket
 if [[ $XDG_SESSION_TYPE == "wayland" ]]
@@ -15,17 +15,21 @@ then
     then
         echo "Wayland socket is available, running natively on Wayland."
         echo "To disable, remove the --socket=wayland permission."
-        EXTRA_FLAGS+=(--ozone-platform=wayland)
+        EXTRA_FLAGS+=(
+            "--enable-features=WaylandWindowDecorations"
+            "--ozone-platform=wayland"
+        )
     else
         echo "Wayland socket not available, running through Xwayland."
     fi
     if [[ -c /dev/nvidia0 ]]
     then
         echo "Using NVIDIA on Wayland, applying workaround"
-        EXTRA_FLAGS+=(--disable-gpu-sandbox)
+        EXTRA_FLAGS+=("--disable-gpu-sandbox")
     fi
 
 fi
 
 cd /app/lib/tidal-hifi
-exec ./tidal-hifi "${FLAGS[@]}" "$@"
+export TMPDIR="$XDG_CACHE_HOME"
+exec zypak-wrapper ./tidal-hifi "${EXTRA_FLAGS[@]}" "$@"
