@@ -18,6 +18,7 @@ finish-args:
   - "--filesystem=xdg-run/app/com.discordapp.Discord:create"
   - "--own-name=org.mpris.MediaPlayer2.tidal-hifi"
   - "--talk-name=org.freedesktop.Notifications"
+  - "--env=XCURSOR_PATH=/run/host/user-share/icons:/run/host/share/icons"
 modules:
   - name: tidal-hifi
     buildsystem: simple
