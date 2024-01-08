@@ -42,6 +42,12 @@
   </screenshots>
   <content_rating type="oars-1.1" />
   <releases>
+    <release version="5.8.0" date="2024-01-07">
+      <description>
+        <p>Added functionality to favorite a song</p>
+        <p>Fixed wrong "end time stamp" for currently playing song and added toggle to sync time with discord rpc</p>
+      </description>
+    </release>
     <release version="5.7.1" date="2023-09-11">
       <description>
         <p>Fix MPRIS related issues</p>
