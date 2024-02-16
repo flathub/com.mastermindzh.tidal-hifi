@@ -130,7 +130,7 @@
     <release version="5.0.0" date="2023-04-22">
       <description>
         <p>Adblocking support thanks to @thanasistrisp.</p>
-        <p> Replaced "muting artists" with a full implementation of an Adblock mechanism<br /> >
+        <p> Replaced "muting artists" with a full implementation of an Adblock mechanism<br />
           Disabled audio &amp; visual ads, unlocked lyrics, suggested track, track info, unlimited
           skips thanks to uBlockOrigin custom filters (source) </p>
         <p>Updated to Electron 24.1.2</p>
