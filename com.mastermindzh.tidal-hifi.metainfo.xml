@@ -42,10 +42,22 @@
   </screenshots>
   <content_rating type="oars-1.1" />
   <releases>
+    <release version="5.9.0" date="2024-02-12">
+      <description>
+        <p>Added the ability to hide the current song from the discord activity and display a custom
+          text instead</p>
+        <p>Added the ability to customize the text that is shown when no song is playing</p>
+        <p>Discord now reacts to pausing/unpausing events</p>
+        <p>Refactored media info updates so it only updates the required info</p>
+        <p>Fixed chromium mediaSession instance showing up</p>
+        <p>Made sure settingsWindow exists before operating on it</p>
+      </description>
+    </release>
     <release version="5.8.0" date="2024-01-07">
       <description>
         <p>Added functionality to favorite a song</p>
-        <p>Fixed wrong "end time stamp" for currently playing song and added toggle to sync time with discord rpc</p>
+        <p>Fixed wrong "end time stamp" for currently playing song and added toggle to sync time
+          with discord rpc</p>
       </description>
     </release>
     <release version="5.7.1" date="2023-09-11">
@@ -57,7 +69,9 @@
       <description>
         <p>Added settings to customize the Discord rich presence information </p>
         <p>Restyled settings menu to include version number and useful links on the about page</p>
-        <p>The ListenBrainz integration has been extended with a configurable (5 seconds by default) delay in song reporting so that it doesn't spam the API when you are cycling through songs.</p>
+        <p>The ListenBrainz integration has been extended with a configurable (5 seconds by default)
+          delay in song reporting so that it doesn't spam the API when you are cycling through
+          songs.</p>
       </description>
     </release>
     <release version="5.6.0" date="2023-08-12">
@@ -116,7 +130,7 @@
     <release version="5.0.0" date="2023-04-22">
       <description>
         <p>Adblocking support thanks to @thanasistrisp.</p>
-        <p> Replaced "muting artists" with a full implementation of an Adblock mechanism<br /> >
+        <p> Replaced "muting artists" with a full implementation of an Adblock mechanism
           Disabled audio &amp; visual ads, unlocked lyrics, suggested track, track info, unlimited
           skips thanks to uBlockOrigin custom filters (source) </p>
         <p>Updated to Electron 24.1.2</p>
