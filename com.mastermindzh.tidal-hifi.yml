@@ -14,10 +14,11 @@ finish-args:
   - "--socket=pulseaudio"
   - "--share=network"
   - "--device=dri"
-  - "--talk-name=org.freedesktop.Notifications"
   - "--filesystem=xdg-run/app/com.discordapp.Discord:create"
   - "--own-name=org.mpris.MediaPlayer2.tidal-hifi"
   - "--talk-name=org.freedesktop.Notifications"
+  - "--talk-name=org.gnome.SettingsDaemon.MediaKeys"
+  - "--talk-name=org.gnome.SessionManager"
   - "--env=XCURSOR_PATH=/run/host/user-share/icons:/run/host/share/icons"
 modules:
   - name: tidal-hifi
