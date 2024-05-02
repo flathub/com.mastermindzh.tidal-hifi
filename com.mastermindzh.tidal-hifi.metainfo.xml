@@ -42,6 +42,13 @@
   </screenshots>
   <content_rating type="oars-1.1" />
   <releases>
+    <release version="5.10.0" date="2024-03-24">
+      <description>
+        <p>Links in the about window now open in the user's default browser</p>
+        <p>TIDAL will now close the previous notification if a new one is sent whilst the old is still visible</p>
+        <p>Fixed a bug causing the nowPlaying state to be incorrect occasionally</p>
+      </description>
+    </release>
     <release version="5.9.0" date="2024-02-12">
       <description>
         <p>Added the ability to hide the current song from the discord activity and display a custom
