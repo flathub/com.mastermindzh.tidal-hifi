@@ -17,6 +17,7 @@ finish-args:
   - "--filesystem=xdg-run/app/com.discordapp.Discord:create"
   - "--own-name=org.mpris.MediaPlayer2.tidal-hifi"
   - "--talk-name=org.freedesktop.Notifications"
+  - "--talk-name=org.kde.StatusNotifierWatcher"
   - "--talk-name=org.gnome.SettingsDaemon.MediaKeys"
   - "--talk-name=org.gnome.SessionManager"
   - "--env=XCURSOR_PATH=/run/host/user-share/icons:/run/host/share/icons"
@@ -24,8 +25,8 @@ modules:
   - name: tidal-hifi
     buildsystem: simple
     build-commands:
-      - chmod +x tidal-hifi-5.12.0.AppImage
-      - ./tidal-hifi-5.12.0.AppImage --appimage-extract
+      - chmod +x tidal-hifi-5.13.0.AppImage
+      - ./tidal-hifi-5.13.0.AppImage --appimage-extract
 
       - install -dm755 "${FLATPAK_DEST}/bin" "${FLATPAK_DEST}/lib/tidal-hifi"
       - cp -r squashfs-root/* "${FLATPAK_DEST}/lib/tidal-hifi"
@@ -38,8 +39,8 @@ modules:
       - install -Dm644 -t ${FLATPAK_DEST}/share/metainfo com.mastermindzh.tidal-hifi.metainfo.xml
     sources:
       - type: file
-        url: https://github.com/Mastermindzh/tidal-hifi/releases/download/5.12.0/tidal-hifi-5.12.0.AppImage
-        sha256: 9fa9a6519dd971868ddbaba5b4acf26d1f525889030257b5d0acdf3f57f1d877
+        url: https://github.com/Mastermindzh/tidal-hifi/releases/download/5.13.0/tidal-hifi-5.13.0.AppImage
+        sha256: c210dffc8308ef1be37ae7de182fd9a519474af836eeef30265921187f624ddd
       - type: file
         path: com.mastermindzh.tidal-hifi.metainfo.xml
       - type: file
