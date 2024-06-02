@@ -42,6 +42,11 @@
   </screenshots>
   <content_rating type="oars-1.1" />
   <releases>
+    <release version="5.13.1" date="2024-05-27">
+      <description>
+        <p>Fixed an issue causing app to crash on fresh start</p>
+      </description>
+    </release>
     <release version="5.13.0" date="2024-05-20">
       <description>
         <p>Fixed shuffle undefined bug</p>
