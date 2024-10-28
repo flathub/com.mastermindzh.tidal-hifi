@@ -42,6 +42,13 @@
   </screenshots>
   <content_rating type="oars-1.1" />
   <releases>
+    <release version="5.17.0" date="2024-10-27">
+      <description>
+        <p>Added an option to disable the dynamic title and set it to a static one</p>
+        <p>Discord integration now shows the "Listening to" activity instead of "playing"</p>
+        <p>Removed the Songwhip integration and replaced it with TIDAL's universal link system</p>
+      </description>
+    </release>
     <release version="5.16.0" date="2024-08-11">
       <description>
         <p>Fixes Discord RPC getting stuck on browsing</p>
