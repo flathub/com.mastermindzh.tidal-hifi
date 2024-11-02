@@ -4,6 +4,11 @@ for i in {0..9}; do
     test -S $XDG_RUNTIME_DIR/discord-ipc-$i || ln -sf {app/com.discordapp.Discord,$XDG_RUNTIME_DIR}/discord-ipc-$i;
 done
 
+# Vesktop RPC
+for i in {0..9}; do
+    test -S $XDG_RUNTIME_DIR/discord-ipc-$i || ln -sf $XDG_RUNTIME_DIR/.flatpak/dev.vencord.Vesktop/xdg-run/discord-ipc-$i;
+done
+
 declare -a EXTRA_FLAGS=()
 
 # Display Socket

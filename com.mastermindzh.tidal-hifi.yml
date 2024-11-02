@@ -15,6 +15,7 @@ finish-args:
   - "--share=network"
   - "--device=dri"
   - "--filesystem=xdg-run/app/com.discordapp.Discord:create"
+  - "--filesystem=xdg-run/.flatpak/dev.vencord.Vesktop:create"
   - "--own-name=org.mpris.MediaPlayer2.tidal-hifi"
   - "--talk-name=org.freedesktop.Notifications"
   - "--talk-name=org.kde.StatusNotifierWatcher"
