@@ -37,6 +37,8 @@ modules:
       - desktop-file-install --dir="${FLATPAK_DEST}/share/applications" --remove-key=X-AppImage-Version --set-key=Exec --set-value=com.mastermindzh.tidal-hifi --set-key=Icon --set-value=com.mastermindzh.tidal-hifi squashfs-root/tidal-hifi.desktop
 
       - install -Dm644 -t ${FLATPAK_DEST}/share/metainfo com.mastermindzh.tidal-hifi.metainfo.xml
+
+      - patch-desktop-filename ${FLATPAK_DEST}/lib/tidal-hifi/resources/app.asar
     sources:
       - type: file
         url: https://github.com/Mastermindzh/tidal-hifi/releases/download/5.17.0/tidal-hifi-5.17.0.AppImage
