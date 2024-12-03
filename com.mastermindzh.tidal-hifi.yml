@@ -49,4 +49,6 @@ modules:
       - type: file
         path: com.mastermindzh.tidal-hifi.png
       - type: file
+        path: com.mastermindzh.tidal-hifi-symbolic.png
+      - type: file
         path: run.sh
