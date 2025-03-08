@@ -16,6 +16,7 @@ finish-args:
   - "--device=dri"
   - "--filesystem=xdg-run/app/com.discordapp.Discord:create"
   - "--own-name=org.mpris.MediaPlayer2.tidal-hifi"
+  - "--own-name=org.mpris.MediaPlayer2.chromium.*"
   - "--talk-name=org.freedesktop.Notifications"
   - "--talk-name=org.kde.StatusNotifierWatcher"
   - "--talk-name=org.gnome.SettingsDaemon.MediaKeys"
