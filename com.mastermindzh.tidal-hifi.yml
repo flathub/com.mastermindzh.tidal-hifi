@@ -26,8 +26,8 @@ modules:
   - name: tidal-hifi
     buildsystem: simple
     build-commands:
-      - chmod +x tidal-hifi-5.18.1.AppImage
-      - ./tidal-hifi-5.18.1.AppImage --appimage-extract
+      - chmod +x tidal-hifi-5.18.2.AppImage
+      - ./tidal-hifi-5.18.2.AppImage --appimage-extract
 
       - install -dm755 "${FLATPAK_DEST}/bin" "${FLATPAK_DEST}/lib/tidal-hifi"
       - cp -r squashfs-root/* "${FLATPAK_DEST}/lib/tidal-hifi"
@@ -43,8 +43,8 @@ modules:
       - patch-desktop-filename ${FLATPAK_DEST}/lib/tidal-hifi/resources/app.asar
     sources:
       - type: file
-        url: https://github.com/Mastermindzh/tidal-hifi/releases/download/5.18.1/tidal-hifi-5.18.1.AppImage
-        sha256: e6c3a4b14b6ef1dc1b8ea1bf12533a731452ef7cd5465ca2b970c90e81213a49
+        url: https://github.com/Mastermindzh/tidal-hifi/releases/download/5.18.2/tidal-hifi-5.18.2.AppImage
+        sha256: 54bdb36c7404429324d7275913869afbcf160f1fb643ecbe9e8e10eec42b02bb
       - type: file
         path: com.mastermindzh.tidal-hifi.metainfo.xml
       - type: file
