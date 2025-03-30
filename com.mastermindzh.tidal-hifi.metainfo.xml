@@ -42,6 +42,16 @@
   </screenshots>
   <content_rating type="oars-1.1" />
   <releases>
+    <release version="5.18.2" date="2025-03-30">
+      <description>
+        <p>Fixed the .desktop file</p>
+      </description>
+    </release>
+    <release version="5.18.1" date="2025-03-29">
+      <description>
+        <p>Fixed the issue with being able to not open the login window</p>
+      </description>
+    </release>
     <release version="5.18.0" date="2025-03-18">
       <description>
         <p>Fixed duration not being properly detected in MPRIS and Discord RPC</p>
@@ -94,7 +104,8 @@
     <release version="5.10.0" date="2024-03-24">
       <description>
         <p>Links in the about window now open in the user's default browser</p>
-        <p>TIDAL will now close the previous notification if a new one is sent whilst the old is still visible</p>
+        <p>TIDAL will now close the previous notification if a new one is sent whilst the old is
+          still visible</p>
         <p>Fixed a bug causing the nowPlaying state to be incorrect occasionally</p>
       </description>
     </release>
