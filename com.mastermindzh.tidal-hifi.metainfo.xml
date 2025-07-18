@@ -42,6 +42,16 @@
   </screenshots>
   <content_rating type="oars-1.1" />
   <releases>
+    <release version="5.20.0" date="2025-07-10">
+      <description>
+        <p>
+          Removes the --enable-features=UseOzonePlatform flag, as the Ozone platform has been the
+          default on Linux since Electron 28 and this flag is no longer necessary.
+          Adds the --enable-wayland-ime flag to enable Input Method Editor (IME) support in Wayland
+          environments, improving the input experience for CJK and other users.
+        </p>
+      </description>
+    </release>
     <release version="5.19.0" date="2025-04-22">
       <description>
         <p>Fixed media updates not working due to missing album names</p>
