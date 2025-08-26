@@ -42,6 +42,13 @@
   </screenshots>
   <content_rating type="oars-1.1" />
   <releases>
+    <release version="5.20.1" date="2025-08-26">
+      <description>
+        <p>
+          Updates Electron, removing the "black border" bug.
+        </p>
+      </description>
+    </release>
     <release version="5.20.0" date="2025-07-10">
       <description>
         <p>
