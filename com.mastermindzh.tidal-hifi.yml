@@ -1,8 +1,8 @@
 app-id: com.mastermindzh.tidal-hifi
 base: org.electronjs.Electron2.BaseApp
-base-version: "24.08"
+base-version: "25.08"
 runtime: org.freedesktop.Platform
-runtime-version: "24.08"
+runtime-version: "25.08"
 sdk: org.freedesktop.Sdk
 separate-locales: false
 command: com.mastermindzh.tidal-hifi
@@ -25,8 +25,8 @@ modules:
   - name: tidal-hifi
     buildsystem: simple
     build-commands:
-      - chmod +x tidal-hifi-6.1.0.AppImage
-      - ./tidal-hifi-6.1.0.AppImage --appimage-extract
+      - chmod +x tidal-hifi-6.3.1.AppImage
+      - ./tidal-hifi-6.3.1.AppImage --appimage-extract
 
       - install -dm755 "${FLATPAK_DEST}/bin" "${FLATPAK_DEST}/lib/tidal-hifi"
       - cp -r squashfs-root/* "${FLATPAK_DEST}/lib/tidal-hifi"
@@ -39,11 +39,11 @@ modules:
 
       - install -Dm644 -t ${FLATPAK_DEST}/share/metainfo com.mastermindzh.tidal-hifi.metainfo.xml
 
-      - patch-desktop-filename ${FLATPAK_DEST}/lib/tidal-hifi/resources/app.asar
+      - patch-electron-desktop-filename ${FLATPAK_DEST}/lib/tidal-hifi/resources/app.asar
     sources:
       - type: file
-        url: https://github.com/Mastermindzh/tidal-hifi/releases/download/6.1.0/tidal-hifi-6.1.0.AppImage
-        sha256: 4a378484bac6270b20b091103200c633f943585e246f6895e71bb2344919f07b
+        url: https://github.com/Mastermindzh/tidal-hifi/releases/download/6.3.1-Mavy/tidal-hifi-6.3.1.AppImage
+        sha256: cd45d984502b05dc5dc39e3ab1ee88c6612c93a25918544311c8583d8bfca94c
       - type: file
         path: com.mastermindzh.tidal-hifi.metainfo.xml
       - type: file
