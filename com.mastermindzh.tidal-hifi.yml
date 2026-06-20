@@ -1,8 +1,8 @@
 app-id: com.mastermindzh.tidal-hifi
 base: org.electronjs.Electron2.BaseApp
-base-version: "24.08"
+base-version: "25.08"
 runtime: org.freedesktop.Platform
-runtime-version: "24.08"
+runtime-version: "25.08"
 sdk: org.freedesktop.Sdk
 separate-locales: false
 command: com.mastermindzh.tidal-hifi
@@ -40,7 +40,7 @@ modules:
 
       - install -Dm644 -t ${FLATPAK_DEST}/share/metainfo com.mastermindzh.tidal-hifi.metainfo.xml
 
-      - patch-desktop-filename ${FLATPAK_DEST}/lib/tidal-hifi/resources/app.asar
+      - patch-electron-desktop-filename ${FLATPAK_DEST}/lib/tidal-hifi/resources/app.asar
     sources:
       - type: file
         url: https://github.com/Mastermindzh/tidal-hifi/releases/download/6.3.1-Mavy/tidal-hifi-6.3.1.AppImage
