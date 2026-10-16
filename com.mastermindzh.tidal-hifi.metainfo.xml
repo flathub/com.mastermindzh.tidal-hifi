@@ -46,6 +46,11 @@
   </screenshots>
   <content_rating type="oars-1.1" />
   <releases>
+    <release version="9.0.0" date="2026-10-16">
+      <description>
+        <p>ARM builds, remote control, sandbox enabled by default, various small fixes.</p>
+      </description>
+    </release>
     <release version="8.1.1" date="2026-08-03">
       <description>
         <p>Transparent themes, custom title bar with transparency and various fixes</p>
